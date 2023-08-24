@@ -1,5 +1,3 @@
-import 'package:chalinge/screen/creatAccount_screen.dart';
-import 'package:chalinge/screen/home_screen.dart';
 import 'package:chalinge/screen/info_screen.dart';
 import 'package:flutter/material.dart';
 

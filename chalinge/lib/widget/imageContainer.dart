@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class imageContainer extends StatelessWidget {
-  const imageContainer({
+class ImageContainer extends StatelessWidget {
+  const ImageContainer({
     super.key,
     required this.image,
     required this.name,
     required this.location,
-    required this.Price,
+    required this.price,
   });
   final String image;
   final String name;
   final String location;
-  final String Price;
+  final String price;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,7 +34,7 @@ class imageContainer extends StatelessWidget {
           location,
           style: const TextStyle(fontWeight: FontWeight.w100),
         ),
-        Text("${Price}/night"),
+        Text("$price/night"),
       ],
     );
   }

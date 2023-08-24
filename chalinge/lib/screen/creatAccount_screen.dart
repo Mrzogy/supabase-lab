@@ -13,7 +13,7 @@ class _CreatAccountState extends State<CreatAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF70B9BF),
+      backgroundColor: const Color(0x476bfe),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -34,54 +34,61 @@ class _CreatAccountState extends State<CreatAccount> {
                 borderRadius: BorderRadius.circular(30),
                 color: Colors.white,
               ),
-              child: const Column(children: [
-                SizedBox(
+              child:  Column(children: [
+                const SizedBox(
                   height: 50,
                 ),
-                Text(
+                const Text(
                   "Create New Account",
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
-                TextFeldInput(
+                const TextFeldInput(
                   size: 400,
                   iconname: Icons.person,
                   name: "Name",
                   namelebel: "Name",
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                TextFeldInput(
+                const TextFeldInput(
                   size: 400,
                   namelebel: "Email",
                   name: "Email",
                   iconname: Icons.email_outlined,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                TextFeldInput(
+                const TextFeldInput(
                   size: 400,
                   namelebel: "Password",
                   name: "password",
                   iconname: Icons.lock,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                TextFeldInput(
+                const TextFeldInput(
                   size: 400,
                   namelebel: "Password",
                   name: "password",
                   iconname: Icons.lock,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 60,
                 ),
-                BlueButton(name: "Sign Up")
+                BlueButton(
+                  name: "Sign Up",
+                  sizeH: 10,
+                  sizeW: 50,
+                  onpresed: () {
+                    
+                  },
+                )
               ]),
             ),
           ),

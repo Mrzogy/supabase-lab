@@ -5,18 +5,21 @@ class TextFeldInput extends StatelessWidget {
     super.key,
     required this.name,
     required this.iconname,
-    required this.namelebel, required this.size,
+    required this.namelebel,
+    required this.size, this.hight,
   });
   final String name;
   final IconData iconname;
   final String namelebel;
   final double size;
+  final double? hight;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
         width: size,
+        height: hight,
         child: TextField(
           decoration: InputDecoration(
               hintText: name,

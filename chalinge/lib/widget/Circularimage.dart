@@ -16,7 +16,7 @@ class Circularimage extends StatelessWidget {
           backgroundImage: AssetImage(imagename),
           radius: 40,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(name)

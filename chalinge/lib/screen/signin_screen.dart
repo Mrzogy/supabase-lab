@@ -9,7 +9,7 @@ class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF70B9BF),
+        backgroundColor: const Color(0xFF70B9BF),
         body: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
           Expanded(
             flex: 1,
@@ -58,8 +58,13 @@ class SignIn extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  const BlueButton(
+                   BlueButton(
                     name: "Login",
+                    sizeH: 40,
+                    sizeW: 300,
+                    onpresed:() {
+                      
+                    },
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

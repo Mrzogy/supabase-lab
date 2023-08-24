@@ -1,5 +1,5 @@
 import 'package:chalinge/widget/Circularimage.dart';
-import 'package:chalinge/widget/TextSpaceButton.dart';
+import 'package:chalinge/widget/text_spaceButton.dart';
 import 'package:chalinge/widget/blue_button.dart';
 import 'package:chalinge/widget/imageContainer.dart';
 import 'package:chalinge/widget/textfield.dart';
@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff476bfe),
+        backgroundColor: const Color(0xff476bfe),
         body: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
           Expanded(
             flex: 0,
@@ -55,7 +55,14 @@ class Home extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  const BlueButton(name: "Search"),
+                   BlueButton(
+                    name: "Search",
+                    sizeH: 40,
+                    sizeW: 300,
+                    onpresed: () {
+                      
+                    },
+                    ),
                   const TextSpaceButton(
                     name: "Popular cities",
                   ),
@@ -101,29 +108,29 @@ class Home extends StatelessWidget {
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           children: [
-                            imageContainer(
+                            ImageContainer(
                               image: 'assets/images/9.png',
                               name: "Ali",
                               location: "gg",
-                              Price: "100",
+                              price: "100",
                             ),
                             SizedBox(
                               width: 10,
                             ),
-                            imageContainer(
+                            ImageContainer(
                               image: 'assets/images/9.png',
                               name: "Ali",
                               location: "gg",
-                              Price: "100",
+                              price: "100",
                             ),
                             SizedBox(
                               width: 10,
                             ),
-                            imageContainer(
+                            ImageContainer(
                               image: 'assets/images/9.png',
                               name: "Ali",
                               location: "gg",
-                              Price: "100",
+                              price: "100",
                             ),
                             SizedBox(
                               width: 10,
