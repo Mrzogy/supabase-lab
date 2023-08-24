@@ -41,6 +41,7 @@ class SignIn extends StatelessWidget {
                     height: 20,
                   ),
                   const TextFeldInput(
+                    size: 40,
                     namelebel: "Email",
                     name: "Email",
                     iconname: Icons.email_outlined,
@@ -49,6 +50,7 @@ class SignIn extends StatelessWidget {
                     height: 20,
                   ),
                   const TextFeldInput(
+                    size: 40,
                     namelebel: "Password",
                     name: "password",
                     iconname: Icons.lock,

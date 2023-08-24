@@ -1,4 +1,5 @@
 import 'package:chalinge/screen/creatAccount_screen.dart';
+import 'package:chalinge/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +11,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: CreatAccount());
+    return const MaterialApp(home: Home());
   }
 }

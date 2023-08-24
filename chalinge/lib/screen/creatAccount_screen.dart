@@ -46,6 +46,7 @@ class _CreatAccountState extends State<CreatAccount> {
                   height: 30,
                 ),
                 TextFeldInput(
+                  size: 400,
                   iconname: Icons.person,
                   name: "Name",
                   namelebel: "Name",
@@ -54,6 +55,7 @@ class _CreatAccountState extends State<CreatAccount> {
                   height: 10,
                 ),
                 TextFeldInput(
+                  size: 400,
                   namelebel: "Email",
                   name: "Email",
                   iconname: Icons.email_outlined,
@@ -62,6 +64,7 @@ class _CreatAccountState extends State<CreatAccount> {
                   height: 10,
                 ),
                 TextFeldInput(
+                  size: 400,
                   namelebel: "Password",
                   name: "password",
                   iconname: Icons.lock,
@@ -70,6 +73,7 @@ class _CreatAccountState extends State<CreatAccount> {
                   height: 10,
                 ),
                 TextFeldInput(
+                  size: 400,
                   namelebel: "Password",
                   name: "password",
                   iconname: Icons.lock,
