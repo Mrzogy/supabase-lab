@@ -27,24 +27,24 @@ class Home extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  TextFeldInput(
+                  const TextFeldInput(
                     size: 400,
                     name: "Location",
                     iconname: Icons.map_outlined,
                     namelebel: "City",
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const TextFeldInput(
+                      TextFeldInput(
                         size: 230,
                         namelebel: "20 - 25 May 2023",
                         name: "Date",
                         iconname: Icons.date_range,
                       ),
-                      const TextFeldInput(
+                      TextFeldInput(
                         size: 150,
                         namelebel: "Guest",
                         name: "3 person",
@@ -52,18 +52,18 @@ class Home extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  BlueButton(name: "Search"),
-                  TextSpaceButton(
+                  const BlueButton(name: "Search"),
+                  const TextSpaceButton(
                     name: "Popular cities",
                   ),
                   InkWell(
                     onTap: () {
                       print("hi");
                     },
-                    child: SingleChildScrollView(
+                    child: const SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
@@ -89,16 +89,16 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
-                  TextSpaceButton(
+                  const TextSpaceButton(
                     name: "Favorite place to holiday",
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  SingleChildScrollView(
+                  const SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8.0),
                         child: Row(
                           children: [
                             imageContainer(
