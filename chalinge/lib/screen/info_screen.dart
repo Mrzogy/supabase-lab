@@ -4,7 +4,6 @@ import 'package:chalinge/widget/LocationHotel.dart';
 import 'package:chalinge/widget/PriceNight.dart';
 import 'package:chalinge/widget/RateRivew.dart';
 import 'package:chalinge/widget/RivewDetail.dart';
-import 'package:chalinge/widget/RiviewDiscription.dart';
 import 'package:chalinge/widget/blue_button.dart';
 import 'package:flutter/material.dart';
 
@@ -152,10 +151,10 @@ class Info extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  const RiviewDiscription(
-                    reviewDiscription:
-                        "Facilities jnejfnejwfn euhfiuehfiuehfiuew biuhfiuhfiue iuhfiwefhiuhfew eufheiuhfiuehf efiuehfuhduiehd uhdweuhhdwudhwiu",
-                  ),
+                  // const RiviewDiscription(
+                  //   reviewDiscription:
+                  //       "Facilities jnejfnejwfn euhfiuehfiuehfiuew biuhfiuhfiue iuhfiwefhiuhfew eufheiuhfiuehf efiuehfuhduiehd uhdweuhhdwudhwiu",
+                  // ),
                   const SizedBox(
                     height: 100,
                   ),
@@ -184,4 +183,3 @@ class Info extends StatelessWidget {
     );
   }
 }
-

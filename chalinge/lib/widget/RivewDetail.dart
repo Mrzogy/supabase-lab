@@ -1,3 +1,4 @@
+import 'package:chalinge/widget/RiviewDiscription.dart';
 import 'package:flutter/material.dart';
 
 class RivewDetail extends StatelessWidget {
@@ -5,25 +6,34 @@ class RivewDetail extends StatelessWidget {
     super.key,
     this.name,
     this.rate,
+    this.discription,
   });
   final String? name;
   final String? rate;
+  final String? discription;
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
-        Text(
-          name ?? "",
-          style: const TextStyle(fontWeight: FontWeight.w600),
+        Row(
+          children: [
+            Text(
+              name ?? "",
+              style: const TextStyle(fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(
+              width: 5,
+            ),
+            const Icon(
+              Icons.star,
+              color: Colors.amber,
+            ),
+            Text(rate ?? "5"),
+          ],
         ),
-        const SizedBox(
-          width: 5,
-        ),
-        const Icon(
-          Icons.star,
-          color: Colors.amber,
-        ),
-        Text(rate ?? ""),
+        RiviewDiscription(
+          reviewDiscription: discription ?? "",
+        )
       ],
     );
   }
