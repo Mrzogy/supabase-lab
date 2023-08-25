@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 class RivewDetail extends StatelessWidget {
   const RivewDetail({
     super.key,
-    required this.name,
-    required this.rate,
+    this.name,
+    this.rate,
   });
-  final String name;
-  final String rate;
+  final String? name;
+  final String? rate;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Text(
-          name,
+          name ?? "",
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
         const SizedBox(
@@ -23,8 +23,26 @@ class RivewDetail extends StatelessWidget {
           Icons.star,
           color: Colors.amber,
         ),
-        Text(rate),
+        Text(rate ?? ""),
       ],
     );
   }
 }
+
+
+//     return FutureBuilder(
+//       future: SupabaseHotelCall().getHotel(),
+//       builder: (context, snapshot) {
+//         if (snapshot.hasData) {
+//           final list = snapshot.data ?? [];
+//           for (final hotel in list) {
+//             return InfoComponant(
+//               hotel: hotel,
+//             );
+//           }
+//         }
+//         return const SizedBox.shrink();
+//       },
+//     );
+//   }
+// }

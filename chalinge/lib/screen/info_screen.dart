@@ -21,7 +21,7 @@ class Info extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Image.asset(
-              "assets/images/9.png",
+              "chalinge/assets/images/9.png",
               width: MediaQuery.of(context).size.width,
               fit: BoxFit.fitWidth,
             ),
@@ -29,7 +29,7 @@ class Info extends StatelessWidget {
           Expanded(
             flex: 0,
             child: Container(
-              width: 700,
+              width: 800,
               height: 700,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
@@ -146,10 +146,7 @@ class Info extends StatelessWidget {
                     padding: EdgeInsets.only(left: 50),
                     child: Align(
                       alignment: Alignment.centerLeft,
-                      child: RivewDetail(
-                        name: "Adam Smith",
-                        rate: "4.8",
-                      ),
+                      child: RivewDetail(),
                     ),
                   ),
                   const SizedBox(
@@ -187,3 +184,4 @@ class Info extends StatelessWidget {
     );
   }
 }
+
